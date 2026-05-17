@@ -1,0 +1,13 @@
+fastapi
+sqlalchemy
+psycopg2-binary 
+pydantic
+uvicorn 
+python-jose
+passlib[argon2]
+python-multipart
+email-validator
+redis
+python-dotenv
+google-auth
+google-auth-oauthlib

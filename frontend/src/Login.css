@@ -1,0 +1,123 @@
+/* Reusing the dark theme from your register page */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+  padding: 20px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* The signature orange accent bar */
+.register-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ff4d00;
+}
+
+.glitch-text {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.form-subtitle {
+  color: #ff4d00;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.sports-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  background: #222;
+  border: 1px solid #444;
+  padding: 15px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #ff4d00;
+  background: #2a2a2a;
+}
+
+.form-footer-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: #888;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-footer-links span:hover {
+  color: #ff4d00;
+}
+
+.register-btn {
+  background: #ff4d00;
+  color: white;
+  padding: 15px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  /* Slanted "Sporty" button */
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+  transition: all 0.2s;
+  letter-spacing: 1px;
+}
+
+.register-btn:hover {
+  background: #ff6a2a;
+  transform: scale(1.03) skewX(-2deg);
+}
+
+.status-msg.error {
+  color: #ff3333;
+  border-left: 4px solid #ff3333;
+  background: rgba(255, 51, 51, 0.1);
+  padding: 10px;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+/* Add to Login.css */
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+}
+
+.status-msg.success {
+  animation: pulse-green 2s infinite;
+  border: 1px solid #00ff88;
+}

@@ -1,0 +1,73 @@
+/* PAGE BACKGROUND */
+.performance-container {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: white;
+  padding: 60px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+.performance-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.performance-header h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #ff6a00;
+  margin-bottom: 10px;
+}
+
+.performance-header p {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* GRID LAYOUT */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* METRIC CARD */
+.metric-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #ff6a00;
+}
+
+.metric-card h3 {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.metric-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+/* LOADING */
+.performance-loading {
+  height: 100vh;
+  background: #0f0f0f;
+  color: #ff6a00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
